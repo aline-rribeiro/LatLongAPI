@@ -1,0 +1,30 @@
+<html lang="pt-br>
+<head>
+  <meta charset=" UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="script.js" defer></script>
+<link rel="stylesheet" href="style.css">
+<title>Buscar Endereço por Latitude e Longitude</title>
+</head>
+
+<body>
+  <h2>Buscar endereço</h2>
+
+  <label>
+    Latitude:
+    <input type="text" id="lat" placeholder="-23.55052">
+  </label>
+  <br>
+  <label>
+    Longitude:
+    <input type="text" id="lon" placeholder="-46.633308">
+  </label>
+  <br><br>
+  <button onclick="buscarEndereco()">Buscar</button>
+
+  <h3 id="resultado-paragrafo">Endereço Completo:</h3>
+  <p id="resultado">Digite as coordenadas e clique em "Buscar".</p>
+
+</body>
+
+</html>
