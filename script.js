@@ -33,7 +33,7 @@ function buscarEndereco() {
                 document.getElementById('resultado').innerHTML = `
                         <p>Rua: ${data.address.road}</p>
                         <p>Bairro: ${data.address.suburb}</p>
-                        <p>Cidade: ${data.address.city}</p>
+                        <p>Cidade: ${data.address.city || data.address.town}</p>
                         <p>CEP: ${data.address.postcode}</p>
                         <p>Estado: ${data.address.state}</p>
                         <p>País: ${data.address.country}</p>`;
